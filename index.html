@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickNote Pad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>📝 QuickNote Pad</h1>
+            <p>Your simple notepad with reminders.</p>
+        </header>
+        
+        <div class="note-editor">
+            <textarea id="note-input" placeholder="Write your note here..."></textarea>
+            <div class="note-actions">
+                <div class="reminder-section">
+                    <label for="reminder-input">Set a Reminder:</label>
+                    <input type="datetime-local" id="reminder-input">
+                </div>
+                <button id="save-btn">Save Note</button>
+            </div>
+        </div>
+
+        <div class="notes-list" id="notes-list">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #1a1a1a;
+}
+
+header p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.note-editor textarea {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    resize: vertical;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.note-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.reminder-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reminder-section label {
+    font-weight: 500;
+    color: #555;
+}
+
+.reminder-section input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+}
+
+#save-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#save-btn:hover {
+    background-color: #0056b3;
+}
+
+.note-item {
+    background-color: #fcfcfc;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.note-item .content {
+    white-space: pre-wrap; /* Preserves line breaks in the note */
+    word-break: break-word;
+    flex-grow: 1;
+}
+
+.note-item .reminder {
+    font-size: 0.85em;
+    color: #007bff;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.note-item .delete-btn {
+    background: none;
+    border: none;
+    color: #ff4d4d;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.note-item .delete-btn:hover {
+    color: #cc0000;
+}
